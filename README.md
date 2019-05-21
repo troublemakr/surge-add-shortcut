@@ -6,8 +6,8 @@
 
 1. 设置环境变量
 
-- 设置 `SURGE_CONF` 为你的设置文件地址，比如我的为`/Users/myname/Library/Mobile Documents/iCloud~com~nssurge~inc/Documents/macOS.conf`；
-- 设置 `SURGE_PROXY` 为你的代理名称，比如我的就是 `PROXY` 而已。
+  - 设置 `SURGE_CONF` 为你的设置文件地址，比如我的为`/Users/myname/Library/Mobile Documents/iCloud~com~nssurge~inc/Documents/macOS.conf`；
+  - 设置 `SURGE_PROXY` 为你的代理名称，比如我的就是 `PROXY` 而已。
 
 2. 下载`surge-add`，然后添加到执行目录，如`/usr/local/bin`
 
