@@ -15,6 +15,9 @@ func main() {
 	if len(path) == 0 {
 		log.Fatalf("Please set env SURGE_CONF to the path of your surge config file.\n")
 	}
+	if len(proxy) == 0 {
+		log.Fatalf("Please set env SURGE_PROXY to the name of your proxy or your proxy group.\n")
+	}
 	if len(os.Args) == 1 {
 		fmt.Println(os.Args[0])
 	} else {
