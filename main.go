@@ -19,7 +19,15 @@ func main() {
 		log.Fatalf("Please set env SURGE_PROXY to the name of your proxy or your proxy group.\n")
 	}
 	if len(os.Args) == 1 {
-		fmt.Println(os.Args[0])
+		fmt.Println(`surge-add: Add DOMAIN-SUFFIX rule to your Surge config.
+
+    Config: 
+        1. Add export SURGE_CONF="path/to/your/surge/config/file" to ~/.bash_profile. 
+        2. Add export SURGE_PROXY="your_proxy_name" to ~/.bash_profile.
+        3. Move surge-add to /usr/local/bin or any other executable path.
+
+    Usage: 
+        surge-add DOMAIN-SUFFIX`)
 	} else {
 		suffix := os.Args[1]
 		domainExp := `(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]`
