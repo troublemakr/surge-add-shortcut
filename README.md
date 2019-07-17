@@ -13,7 +13,13 @@
 
 3. 执行命令`surge-add example.com`，然后就往配置文件添加 `DOMAIN-SUFFIX,example.com,PROXY` 规则。
 
-你还可以基于这命令，添加 LaunchBar 的 Action 或者 Alfred 的 Workflow。
+## Alfred Workflow 使用方法
+
+> as example.com
+
+下载本项目提供的 Alfred Worflow 并安装，然后在设置里打开，修改 shell script（即`SURGE_CONF`，`SURGE_PROXY` 以及 `surge-add` 的路径）。
+
+如果仅在 Alfred 中使用此命令，那么环境变量 `SURGE_CONF` 和 `SURGE_PROXY` 不需要额外设置，Alred Workflow 内已包括这些设置。
 
 ## License
 MIT
