@@ -9,7 +9,7 @@
   - 设置 `SURGE_CONF` 为你的设置文件地址，比如我的为`/Users/myname/Library/Mobile Documents/iCloud~com~nssurge~inc/Documents/macOS.conf`；
   - 设置 `SURGE_PROXY` 为你的代理名称或者代理组名称，比如我的就是 `PROXY` 而已。
 
-2. 下载`surge-add`，然后添加到执行目录，如`/usr/local/bin`，然后运行 `chmod +x surge-add` 添加权限；
+2. 下载`surge-add`，或 clone 项目后运行`go build`得到可执行文件，并将其添加到执行目录，如`/usr/local/bin`，然后运行 `chmod +x surge-add` 添加权限；
 
 3. 执行命令`surge-add example.com`，然后就往配置文件添加 `DOMAIN-SUFFIX,example.com,PROXY` 规则。
 
